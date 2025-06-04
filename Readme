@@ -1,0 +1,41 @@
+# 📄 DocuAI – Chat with Your Documents using Gemini API
+
+DocuAI is a **streamlit-based web app** that lets you **upload PDF documents, analyze their content**, and interactively **chat with the text** using Google's **Gemini Pro model**. This is perfect for summarization, brainstorming, and extracting insights from complex PDFs.
+
+---
+
+## 🚀 Features
+
+- 📂 **PDF Upload** – Easily upload PDF files to analyze.
+- 🤖 **AI Chat Interface** – Ask questions or interact with the document using Gemini Pro.
+- ⚡ **Streaming Responses** – Real-time streaming of model output like ChatGPT.
+- 🧠 **Quick Actions** – Clickable smart chips for common tasks like:
+  - Document Summary
+  - Brainstorming Ideas
+  - Key Insight Extraction
+  - General Analysis
+- 🌙 **Dark Theme + Stylish UI** – Clean interface using custom CSS.
+- 🔒 **Backend API Key Handling** – API key securely loaded from environment, not exposed in frontend.
+
+---
+
+## 🧰 Technologies Used
+
+| Tech                | Purpose                                                                 |
+|---------------------|-------------------------------------------------------------------------|
+| `Streamlit`         | Frontend UI for the web app                                              |
+| `PyPDF2`            | PDF text extraction                                                      |
+| `google.generativeai` | Gemini Pro integration for content generation                        |
+| `Google Gemini API` | Generative AI backend                                                    |
+| `Python 3.10+`       | Core programming language                                                |
+| `Environment Variable (os.getenv)` | Securely loads Gemini API key from backend                |
+| `Custom CSS`        | UI Styling – smaller action chips, dark theme, rounded buttons          |
+
+---
+
+## 📁 Project Structure
+
+```plaintext
+📄 app.py              # Main Streamlit app
+📝 README.md           # You're reading this
+.env (optional)        # Store GEMINI_API_KEY here (not committed to Git)
